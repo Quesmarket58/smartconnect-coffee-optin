@@ -155,6 +155,24 @@
     flex-shrink: 0;
   }
 
+  /* HERO BG IMAGE */
+  .hero-bg-img {
+    position: absolute;
+    inset: 0;
+    background: url('./1767723719Live_Healthy_Smart_Coffee.jpg') center center / cover no-repeat;
+    filter: brightness(0.22) saturate(0.6);
+    transform: scale(1.04);
+    transition: transform 8s ease;
+    z-index: 0;
+  }
+
+  .hero:hover .hero-bg-img { transform: scale(1.0); }
+
+  .hero-left, .form-card {
+    position: relative;
+    z-index: 2;
+  }
+
   /* FORM CARD */
   .form-card {
     background: var(--warm-white);
@@ -642,6 +660,7 @@
 
 <!-- HERO -->
 <section class="hero">
+  <div class="hero-bg-img"></div>
   <div class="hero-left">
     <div class="badge"><span class="badge-dot"></span> Free Blueprint — Instant Access</div>
     <p class="hero-tag">Good Energy Co. × Smart Connect Biz</p>
